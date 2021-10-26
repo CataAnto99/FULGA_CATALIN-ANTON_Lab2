@@ -76,8 +76,8 @@
                 <MenuItem Header="Exit" Click="exitToolStripMenuItem_Click"/>
             </MenuItem>
 
-            <MenuItem Header="_Doughnuts" Grid.Column="3" Height="27"/>
-            <MenuItem Header="Make">
+            <MenuItem Header="_Doughnuts" Grid.Column="3" Height="27">
+                <MenuItem Header="Make">
                     <MenuItem Header="Raised">
                         <MenuItem x:Name="glazedToolStripMenuItem" Header="Glazed" Click="glazedToolStripMenuItem_Click" IsCheckable="True" InputGestureText="Ctrl+P" Command="ApplicationCommands.Print"/>
                         <MenuItem x:Name="sugarToolStripMenuItem" Header="Sugar" IsCheckable="True" Click="sugarToolStripMenuItem_Click"/>
@@ -86,7 +86,8 @@
                         <MenuItem x:Name="lemonToolStripMenuItem" Header="Lemon"/>
                         <MenuItem x:Name="chocolateToolStripMenuItem" Header="Chocolate"/>
                         <MenuItem x:Name="vanillaToolStripMenuItem" Header="Vanilla"/>
-                            </MenuItem>
+                    </MenuItem>
+                </MenuItem>
                 <MenuItem x:Name="mnuStop" Header="Stop" Click="stopToolStripMenuItem_Click" InputGestureText="Ctrl+S" Command="CustomCommands:StopCommand.Launch" />
                 <MenuItem Header="Inventory" Command="ApplicationCommands.Print"></MenuItem>
                 </MenuItem>
